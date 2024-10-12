@@ -1,0 +1,29 @@
+{
+  "name": "api",
+  "type": "module",
+  "exports": {
+    "./hc": {
+      "import": {
+        "default": "./src/hc.ts",
+        "types": "./src/hc.ts"
+      }
+    }
+  },
+  "scripts": {
+    "dev": "tsx watch --env-file=.env src/index.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.2",
+    "@hono/zod-openapi": "^0.16.4",
+    "@hono/zod-validator": "^0.4.1",
+    "@scalar/hono-api-reference": "^0.5.153",
+    "hono": "^4.6.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1",
+    "vitest": "^2.1.2"
+  }
+}
