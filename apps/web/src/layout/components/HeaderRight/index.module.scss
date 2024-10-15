@@ -1,0 +1,20 @@
+.skin {
+  position: relative;
+  width: 40px;
+  height: 64px;
+  button {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+  }
+  .skin_input {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+  }
+}

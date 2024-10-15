@@ -1,0 +1,11 @@
+:root.dark {
+  --text-color: var(--white-65);
+  --text-hover-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --text-color: var(--white-65);
+    --text-hover-color: white;
+  }
+}
