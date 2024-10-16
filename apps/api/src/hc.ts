@@ -1,4 +1,4 @@
-import { app } from "./app";
+import { app } from "@/app";
 import { hc } from "hono/client";
 
 // assign the client to a variable to calculate the type when compiling

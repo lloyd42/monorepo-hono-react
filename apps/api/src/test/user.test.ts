@@ -1,5 +1,5 @@
 import { OpenAPIHono, RouteHandler, createRoute, z } from "@hono/zod-openapi";
-import { describe, it, test } from "vitest";
+import { describe, it } from "vitest";
 
 describe("supports async handler", () => {
   const route = createRoute({

@@ -3,6 +3,8 @@ import { zValidator } from "@hono/zod-validator";
 import { z } from "zod";
 import { sign } from "hono/jwt";
 
+const secretKey = process.env.JWT_SECRET!;
+
 const schema = z.object({
   name: z.string(),
   id: z.number(),
@@ -18,8 +20,8 @@ export const auth = new Hono()
       role: user.role,
       exp: Math.floor(Date.now() / 1000) + 60 * 5, // Token expires in 5 minutes
     };
-    const secret = process.env.JWT_SECRET!;
-    const token = await sign(payload, secret);
+
+    const token = await sign(payload, secretKey);
     c.json({ token });
   })
   .post("/logout", (c) => c.json("user logout"))

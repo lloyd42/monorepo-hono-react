@@ -1,4 +1,4 @@
-import { app } from "./app";
+import { app } from "@/app";
 import { serve } from "@hono/node-server";
 
 serve(
