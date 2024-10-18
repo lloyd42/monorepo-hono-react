@@ -70,5 +70,7 @@ pnpm test
 
 ## Thanks
 
-[hono-open-api-starter](https://github.com/w3cj/hono-open-api-starter)
-[react-temp-admin](https://github.com/iamzwq/react-temp-admin)
+- [hono-open-api-starter](https://github.com/w3cj/hono-open-api-starter)
+- [react-temp-admin](https://github.com/iamzwq/react-temp-admin)
+- [hono-node-deployment-examples](https://github.com/w3cj/hono-node-deployment-examples)
+  

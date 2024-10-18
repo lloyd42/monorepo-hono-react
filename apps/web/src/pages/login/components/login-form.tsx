@@ -26,7 +26,9 @@ export default function LoginForm() {
     }, 300);
   };
 
-  const onFinishFailed: FormProps<FieldType>["onFinishFailed"] = (errorInfo) => {
+  const onFinishFailed: FormProps<FieldType>["onFinishFailed"] = (
+    errorInfo
+  ) => {
     console.log("Failed:", errorInfo);
   };
 
@@ -37,12 +39,21 @@ export default function LoginForm() {
       onFinishFailed={onFinishFailed}
       autoComplete="off"
     >
-      <Form.Item name="username" rules={[{ required: true, message: "请输入手机号" }]}>
+      <Form.Item
+        name="username"
+        rules={[{ required: true, message: "请输入手机号" }]}
+      >
         <Input addonBefore={<UserOutlined />} placeholder="请输入手机号" />
       </Form.Item>
 
-      <Form.Item name="password" rules={[{ required: true, message: "请输入密码" }]}>
-        <Input.Password addonBefore={<LockOutlined />} placeholder="请输入密码" />
+      <Form.Item
+        name="password"
+        rules={[{ required: true, message: "请输入密码" }]}
+      >
+        <Input.Password
+          addonBefore={<LockOutlined />}
+          placeholder="请输入密码"
+        />
       </Form.Item>
 
       <Form.Item>

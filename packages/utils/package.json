@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "scripts": {
-    "test": "vitest run"
+    "test": "vitest run",
+    "build": "tsc"
   },
   "devDependencies": {
     "typescript": "^5.5.3",

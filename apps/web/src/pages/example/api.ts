@@ -54,7 +54,7 @@ export const useTodoDel = () => {
   });
 };
 
-export const query = () => {
+export const useTodoQuery = () => {
   return useQuery({
     queryKey: ["todo"],
     queryFn: async () => {
